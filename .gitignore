@@ -5,6 +5,7 @@
   /src/*.dylib
   /src/*.test
   /src/*.out
+  /src/main
 
   # Go build artifacts
   /src/bin/
