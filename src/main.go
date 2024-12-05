@@ -1,22 +1,23 @@
 // Purpose: demonstrate scanning/lexical analysis
 
-package main 
+package main
 
 import (
-	"os"
 	"fmt"
+
+	"project/stack"
 )
 
-func main(){
-	argCount := len(os.Args)
-
-	if argCount > 2{
-		fmt.Println("Usage: pygo [script]")
-		os.Exit(64) // you did not follow correct usage
-	} else if argCount == 2 {
-		runScript(os.Args[1])
-	} else {
-		startREPL()
-	}
-}	
-
+func main() {
+	var intStack stack.Stack[int]
+	intStack.Push(1)
+	fmt.Println(intStack)
+	intStack.Push(2)
+	fmt.Println(intStack)
+	intStack.Pop()
+	fmt.Println(intStack)
+	intStack.Push(3)
+	fmt.Println(intStack)
+	intStack.Clear()
+	fmt.Println(intStack)
+}
