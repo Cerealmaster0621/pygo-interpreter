@@ -1,0 +1,36 @@
+# Binaries for programs and plugins
+  /src/*.exe
+  /src/*.dll
+  /src/*.so
+  /src/*.dylib
+  /src/*.test
+  /src/*.out
+
+  # Go build artifacts
+  /src/bin/
+  *.exe
+  *.out
+  *.o
+  *.a
+
+  # IDE and Editor settings
+  .vscode/
+  .idea/
+  *.swp
+  *.swo
+
+  # Logs and debug files
+  /src/*.log
+  /src/*.trace
+  /src/*.prof
+
+  # Module cache
+  go.sum
+  go.work
+
+  # Operating system files
+  .DS_Store
+  Thumbs.db
+
+  # Environment or config files
+  .env
