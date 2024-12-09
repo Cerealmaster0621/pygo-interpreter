@@ -4,8 +4,7 @@ package main
 
 import (
 	"fmt"
-
-	"project/stack"
+	"project/tools/stack"
 )
 
 func main() {
