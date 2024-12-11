@@ -2,6 +2,10 @@ package stack
 
 type Stack[T any] []T
 
+func NewStack[T any]() *Stack[T] {
+	return &Stack[T]{}
+}
+
 func (s *Stack[T]) Push(item T) {
 	*s = append(*s, item)
 }
